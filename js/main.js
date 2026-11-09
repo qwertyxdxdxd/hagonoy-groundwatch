@@ -79,7 +79,15 @@ function setupCompactHeader(header) {
     document.documentElement.style.scrollPaddingTop = header.offsetHeight + 16 + "px";
   }
 
-  window.addEventListener("resize", update);
+  // Mobile browsers fire "resize" while scrolling (the address bar shows and hides).
+  // Re-measuring then briefly changes the header height and makes the page jump,
+  // so only re-measure when the width actually changes (e.g. rotating the phone).
+  let lastWidth = window.innerWidth;
+  window.addEventListener("resize", () => {
+    if (window.innerWidth === lastWidth) return;
+    lastWidth = window.innerWidth;
+    update();
+  });
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(update);
   update();
 }
