@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vulnerability Map | Hagonoy GroundWatch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function () { var t = new URLSearchParams(location.search).get("theme"); if (!t) { try { t = localStorage.getItem("groundwatch-theme"); } catch (e) {} } if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; })();</script>
+</head>
+<body>
+  <section class="page-banner">
+    <div class="container">
+      <h1>Vulnerability Map</h1>
+      <p>See which parts of Hagonoy are most exposed to land subsidence and flooding.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section>
+      <h2>Hagonoy, Bulacan on the map</h2>
+      <p class="section-intro">
+        Hagonoy lies on the northern coast of Manila Bay, in the delta of the Pampanga River. The satellite view
+        below shows how much of the municipality is made up of fishponds, rivers, and low coastal land.
+        Zoom in and look for the fishponds and waterways in the southern part of town.
+      </p>
+      <iframe
+        class="map-embed"
+        title="Google Map of Hagonoy, Bulacan"
+        src="https://maps.google.com/maps?q=Hagonoy,%20Bulacan,%20Philippines&t=k&z=12&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+      <p class="note">Map data &copy; Google. An internet connection is required to load the map.</p>
+    </section>
+
+    <section>
+      <h2>Interactive vulnerability zones</h2>
+      <p class="section-intro">Click or tap a zone on the diagram to learn why that area is vulnerable and what residents there can do.</p>
+
+      <div class="map-layout">
+        <div class="map-svg-wrap">
+          <svg viewBox="0 0 600 520" role="group" aria-label="Schematic map of Hagonoy vulnerability zones">
+            <!-- Manila Bay -->
+            <rect x="0" y="0" width="600" height="520" fill="#e9f1ec"/>
+            <path d="M0 400 Q150 370 300 410 T600 395 V520 H0 Z" fill="#7fb3d1"/>
+            <text x="300" y="485" text-anchor="middle" font-size="18" fill="#0a3550" font-weight="700">MANILA BAY</text>
+
+            <!-- Zone C: inland -->
+            <path id="zone-inland" class="zone" tabindex="0" data-zone="inland"
+              d="M90 40 L520 30 L540 170 L60 180 Z" fill="#e6b85c"/>
+            <!-- Zone B: riverside / town centre -->
+            <path id="zone-river" class="zone" tabindex="0" data-zone="river"
+              d="M60 180 L540 170 L555 290 L40 300 Z" fill="#e08a3c"/>
+            <!-- Zone A: coastal / fishpond -->
+            <path id="zone-coastal" class="zone" tabindex="0" data-zone="coastal"
+              d="M40 300 L555 290 L570 392 Q450 400 300 405 Q150 372 30 398 Z" fill="#c8483f"/>
+
+            <!-- Rivers -->
+            <path d="M330 20 C320 120 260 180 290 260 S330 360 300 410" stroke="#3f88b5" stroke-width="7" fill="none" pointer-events="none"/>
+            <path d="M150 60 C170 160 140 240 170 330 S160 380 140 390" stroke="#3f88b5" stroke-width="4" fill="none" pointer-events="none"/>
+            <path d="M470 50 C450 150 480 230 450 320 S470 380 480 396" stroke="#3f88b5" stroke-width="4" fill="none" pointer-events="none"/>
+
+            <!-- Labels -->
+            <g font-size="15" font-weight="700" fill="#1f2a2e" pointer-events="none" text-anchor="middle">
+              <text x="300" y="110">Zone C: Inland barangays</text>
+              <text x="300" y="240">Zone B: Riverside &amp; town center</text>
+              <text x="300" y="350" fill="#fff">Zone A: Coastal &amp; fishpond areas</text>
+            </g>
+            <g pointer-events="none">
+              <circle cx="300" cy="215" r="6" fill="#1f2a2e"/>
+              <text x="312" y="210" font-size="12" fill="#1f2a2e">Poblacion</text>
+            </g>
+            <!-- Compass -->
+            <g transform="translate(560,60)" pointer-events="none">
+              <path d="M0 -22 L7 0 L0 -5 L-7 0 Z" fill="#1f2a2e"/>
+              <text x="0" y="16" text-anchor="middle" font-size="13" font-weight="700">N</text>
+            </g>
+          </svg>
+          <div class="legend">
+            <span><i style="background:#c8483f"></i>High exposure</span>
+            <span><i style="background:#e08a3c"></i>Moderate to high exposure</span>
+            <span><i style="background:#e6b85c"></i>Moderate exposure</span>
+            <span><i style="background:#3f88b5"></i>Rivers</span>
+          </div>
+        </div>
+
+        <aside class="card zone-info" id="zone-info" aria-live="polite">
+          <h3>Select a zone</h3>
+          <p>Click a colored area on the diagram to see details about its level of exposure, the main risks, and recommended actions.</p>
+        </aside>
+      </div>
+
+      <div class="callout warn">
+        <strong>Important:</strong> This is a simplified <em>educational diagram</em>, not an official hazard map.
+        Zone boundaries are approximate. For official hazard information about your exact location, check
+        <a href="https://hazardhunter.georisk.gov.ph/" target="_blank" rel="noopener">HazardHunterPH</a> (PHIVOLCS / DOST),
+        <a href="https://noah.up.edu.ph/" target="_blank" rel="noopener">UP NOAH</a>, or contact the Hagonoy Municipal Disaster Risk Reduction and Management Office (MDRRMO).
+      </div>
+    </section>
+
+    <section>
+      <h2>Barangays of Hagonoy</h2>
+      <p class="section-intro">Hagonoy has 26 barangays <a class="cite" href="references.html#ref-psa2021">(Philippine Statistics Authority [PSA], 2021)</a>. Find yours, then compare it with the zones above and with the official hazard maps.</p>
+      <div class="card">
+        <p style="columns: 3 160px; margin: 0;">
+          Abulalas<br>Carillo<br>Iba<br>Iba-Ibayo<br>Mercado<br>Palapat<br>Pugad<br>Sagrada Familia<br>San Agustin<br>
+          San Isidro<br>San Jose<br>San Juan<br>San Miguel<br>San Nicolas<br>San Pablo<br>San Pascual<br>San Pedro<br>
+          San Roque<br>San Sebastian<br>Santa Cruz<br>Santa Elena<br>Santa Monica<br>Santo Ni&ntilde;o<br>Santo Rosario<br>Tampok<br>Tibaguin
+        </p>
+      </div>
+    </section>
+
+    <div class="btn-row">
+      <a class="btn outline" href="impact.html">&larr; Community Impact</a>
+      <a class="btn" href="solutions.html">Next: Solutions &rarr;</a>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

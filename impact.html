@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Impact | Hagonoy GroundWatch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function () { var t = new URLSearchParams(location.search).get("theme"); if (!t) { try { t = localStorage.getItem("groundwatch-theme"); } catch (e) {} } if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; })();</script>
+</head>
+<body>
+  <section class="page-banner">
+    <div class="container">
+      <h1>Community Impact</h1>
+      <p>Land subsidence is not just a scientific problem. It changes how families in Hagonoy live, work, and learn.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section>
+      <h2>Living with sinking ground</h2>
+      <p class="section-intro">
+        In many parts of Hagonoy, flooding has become a part of daily life. Residents adapt by building raised
+        floors, moving belongings to second stories, and using boats or wading through water to get to school
+        and work. These adaptations help, but they carry real costs to people's health, income, and wellbeing.
+      </p>
+    </section>
+
+    <section>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Households</h3>
+          <ul>
+            <li>Repeated spending to raise floors, rebuild walls, and elevate homes</li>
+            <li>Homes ending up below the level of newly raised roads, so they collect water</li>
+            <li>Damaged furniture, appliances, and important documents</li>
+            <li>Some families forced to relocate as their land becomes permanently wet</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Livelihoods</h3>
+          <ul>
+            <li><strong>Fishpond operators:</strong> dikes overtopped by tides, and fish escaping during floods</li>
+            <li><strong>Farmers:</strong> salty soil and water reduce harvests</li>
+            <li><strong>Small businesses:</strong> lost working days, damaged stock, and fewer customers during floods</li>
+            <li><strong>Workers:</strong> longer, harder commutes through flooded roads</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Education</h3>
+          <ul>
+            <li>Class suspensions during floods and high tides</li>
+            <li>Flooded classrooms and damaged learning materials</li>
+            <li>Students wading through floodwater to reach school</li>
+            <li>Schools needing raised floors and buildings</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Health and safety</h3>
+          <ul>
+            <li>Waterborne and flood-related diseases such as leptospirosis, diarrhea, and skin infections</li>
+            <li>More breeding sites for mosquitoes that carry dengue</li>
+            <li>Unsafe drinking water when wells become salty or contaminated</li>
+            <li>Risk of injury and drowning during floods</li>
+            <li>Stress and anxiety from constant flooding</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Public infrastructure</h3>
+          <ul>
+            <li>Roads, bridges, and drainage that need constant repair or raising</li>
+            <li>Churches, barangay halls, and markets affected by flooding</li>
+            <li>Higher public spending on flood control and pumping stations</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Culture and heritage</h3>
+          <ul>
+            <li>Older structures and heritage sites at risk of water damage</li>
+            <li>Town fiestas and community events disrupted by floods</li>
+            <li>A shift in identity as coastal barangays become "water villages"</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Timeline: How the problem has grown</h2>
+      <p class="section-intro">
+        Subsidence builds up slowly, but the record of floods, research, and policy shows how the problem has grown
+        around northern Manila Bay. Use the buttons to filter by type.
+      </p>
+      <div class="timeline-filters" role="group" aria-label="Filter timeline">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="trend" aria-pressed="false">Trends</button>
+        <button type="button" data-filter="flood" aria-pressed="false">Major floods</button>
+        <button type="button" data-filter="research" aria-pressed="false">Research</button>
+        <button type="button" data-filter="policy" aria-pressed="false">Laws &amp; programs</button>
+      </div>
+      <ol class="timeline" id="timeline">
+        <li data-kind="trend"><div class="card">
+          <span class="year">1970s&ndash;1980s</span><span class="tag">Trend</span>
+          <h3>Groundwater use expands</h3>
+          <p>Growing towns, fishponds, and industries around northern Manila Bay rely more and more on deep wells for their water.</p>
+        </div></li>
+        <li data-kind="policy"><div class="card">
+          <span class="year">1976</span><span class="tag low">Law</span>
+          <h3>Water Code of the Philippines (P.D. 1067)</h3>
+          <p>Requires permits for water use, including groundwater extraction, and sets the rules the NWRB enforces today <a class="cite" href="references.html#ref-pd1067">(Presidential Decree No. 1067, 1976)</a>.</p>
+        </div></li>
+        <li data-kind="policy"><div class="card">
+          <span class="year">1989</span><span class="tag low">Law</span>
+          <h3>Rainwater Collector Act (R.A. 6716)</h3>
+          <p>Provides for rainwater collectors and spring development in barangays, an early alternative to pumping groundwater <a class="cite" href="references.html#ref-ra6716">(Republic Act No. 6716, 1989)</a>.</p>
+        </div></li>
+        <li data-kind="trend"><div class="card">
+          <span class="year">1990s&ndash;2000s</span><span class="tag">Trend</span>
+          <h3>Tidal flooding becomes routine</h3>
+          <p>Coastal communities in Bulacan and Pampanga increasingly see high tides flood streets and homes on days without rain. Roads and floors are raised again and again.</p>
+        </div></li>
+        <li data-kind="policy"><div class="card">
+          <span class="year">2004</span><span class="tag low">Law</span>
+          <h3>Philippine Clean Water Act (R.A. 9275)</h3>
+          <p>Strengthens protection of the country's water resources and water quality <a class="cite" href="references.html#ref-ra9275">(Republic Act No. 9275, 2004)</a>.</p>
+        </div></li>
+        <li data-kind="research"><div class="card">
+          <span class="year">2006</span><span class="tag mod">Research</span>
+          <h3>Subsidence identified as the hidden cause</h3>
+          <p>Rodolfo and Siringan show that worsening floods around northern Manila Bay are driven largely by human-caused land subsidence, not only by global sea-level rise <a class="cite" href="references.html#ref-rodolfo2006">(Rodolfo &amp; Siringan, 2006)</a>.</p>
+        </div></li>
+        <li data-kind="flood"><div class="card">
+          <span class="year">2009</span><span class="tag high">Flood</span>
+          <h3>Typhoons Ondoy and Pepeng</h3>
+          <p>Back-to-back typhoons (international names Ketsana and Parma) bring widespread flooding to Metro Manila and Central Luzon.</p>
+        </div></li>
+        <li data-kind="flood"><div class="card">
+          <span class="year">2011</span><span class="tag high">Flood</span>
+          <h3>Typhoons Pedring and Quiel</h3>
+          <p>Typhoons Pedring (Nesat) and Quiel (Nalgae) leave large parts of Bulacan and Pampanga, including Hagonoy, under floodwater, in many areas for days to weeks.</p>
+        </div></li>
+        <li data-kind="flood"><div class="card">
+          <span class="year">2012</span><span class="tag high">Flood</span>
+          <h3>Southwest monsoon (Habagat) floods</h3>
+          <p>Days of enhanced monsoon rain in August flood Metro Manila and nearby provinces, including Bulacan.</p>
+        </div></li>
+        <li data-kind="research"><div class="card">
+          <span class="year">2013</span><span class="tag mod">Research</span>
+          <h3>Satellites measure the sinking</h3>
+          <p>Raucoules and colleagues use satellite radar (InSAR) to measure fast ground movement in the Manila area from 1993 to 2010 <a class="cite" href="references.html#ref-raucoules2013">(Raucoules et al., 2013)</a>.</p>
+        </div></li>
+        <li data-kind="policy"><div class="card">
+          <span class="year">2019</span><span class="tag low">Program</span>
+          <h3>Manila Bay rehabilitation</h3>
+          <p>The national government launches a large-scale program to clean and rehabilitate Manila Bay and its coastal areas.</p>
+        </div></li>
+        <li data-kind="research"><div class="card">
+          <span class="year">2021</span><span class="tag mod">Research</span>
+          <h3>Subsidence as a global threat</h3>
+          <p>A study in the journal <em>Science</em> maps land subsidence worldwide and identifies coastal and delta areas like ours as high-risk <a class="cite" href="references.html#ref-herrera2021">(Herrera-García et al., 2021)</a>.</p>
+        </div></li>
+        <li data-kind="flood"><div class="card">
+          <span class="year">2023</span><span class="tag high">Flood</span>
+          <h3>Typhoon Egay and the enhanced Habagat</h3>
+          <p>Typhoon Egay (Doksuri) and heavy monsoon rains in July cause severe, long-lasting flooding across Bulacan and Pampanga.</p>
+        </div></li>
+        <li data-kind="flood"><div class="card">
+          <span class="year">2024</span><span class="tag high">Flood</span>
+          <h3>Typhoon Carina and the enhanced Habagat</h3>
+          <p>Typhoon Carina (Gaemi) and monsoon rains in July bring major flooding to Metro Manila and Bulacan.</p>
+        </div></li>
+        <li data-kind="trend"><div class="card">
+          <span class="year">Today</span><span class="tag">Trend</span>
+          <h3>Sinking land plus rising seas</h3>
+          <p>With land still subsiding and sea level rising, every typhoon and high tide reaches further into the town. Slowing subsidence now protects Hagonoy's future.</p>
+        </div></li>
+      </ol>
+      <p class="note">Typhoon names are local PAGASA names, with international names in parentheses.</p>
+    </section>
+
+    <section>
+      <h2>Who is most affected?</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Group</th><th>Why they are more vulnerable</th></tr></thead>
+          <tbody>
+            <tr><td>Coastal and fishpond communities</td><td>Directly exposed to tides and storm surge, on the lowest ground</td></tr>
+            <tr><td>Low-income families</td><td>Fewer resources to raise homes, repair damage, or relocate</td></tr>
+            <tr><td>Children and students</td><td>Missed classes and exposure to flood-related diseases</td></tr>
+            <tr><td>Elderly and persons with disabilities</td><td>Harder to evacuate or move through floodwater</td></tr>
+            <tr><td>Fisherfolk and farmers</td><td>Livelihoods depend directly on land and water conditions</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h3 style="margin-top:0">Reflection: What does this look like in your barangay?</h3>
+      <p>
+        Think about your street, school, or home. Has the road been raised? Does high tide reach places it didn't before?
+        Has your family had to elevate your floor? These everyday observations are signs of subsidence.
+      </p>
+      <a class="btn" href="report.html">Share your observation</a>
+    </section>
+
+    <div class="btn-row">
+      <a class="btn outline" href="causes.html">&larr; Causes &amp; Effects</a>
+      <a class="btn" href="map.html">Next: Vulnerability Map &rarr;</a>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Timeline filter buttons
+    (function () {
+      const buttons = document.querySelectorAll(".timeline-filters button");
+      const items = document.querySelectorAll("#timeline li");
+      buttons.forEach((btn) =>
+        btn.addEventListener("click", () => {
+          const filter = btn.dataset.filter;
+          buttons.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+          items.forEach((li) => (li.hidden = filter !== "all" && li.dataset.kind !== filter));
+        })
+      );
+    })();
+  </script>
+</body>
+</html>

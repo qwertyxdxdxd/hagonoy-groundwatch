@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hagonoy GroundWatch | Land Subsidence Awareness</title>
+  <meta name="description" content="A community-based environmental awareness website about land subsidence in Hagonoy, Bulacan.">
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function () { var t = new URLSearchParams(location.search).get("theme"); if (!t) { try { t = localStorage.getItem("groundwatch-theme"); } catch (e) {} } if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; })();</script>
+</head>
+<body>
+  <section class="hero">
+    <div class="container">
+      <p class="tagline">Hagonoy, Bulacan &middot; Environmental Awareness</p>
+      <h1>Hagonoy GroundWatch</h1>
+      <p class="lead">
+        The ground beneath Hagonoy is slowly sinking. This is called <strong>land subsidence</strong>,
+        and it is one of the main reasons floods in our town have become deeper, longer, and more frequent.
+        Learn what causes it, how it affects our community, and what we can do together.
+      </p>
+      <div class="btn-row">
+        <a class="btn" href="about.html">Learn about subsidence</a>
+        <a class="btn secondary" href="report.html">Report a concern</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section>
+      <h2>Overview: Land subsidence in Hagonoy</h2>
+      <div class="two-col">
+        <div>
+          <p>
+            Hagonoy is a low-lying coastal municipality in western Bulacan, on the northern shore of Manila Bay.
+            Much of the town sits on soft river and delta sediments, just above sea level, and is
+            crossed by rivers, creeks, and fishponds.
+          </p>
+          <p>
+            For decades, communities, businesses, and fishponds around northern Manila Bay have relied heavily on
+            <strong>groundwater pumped from deep wells</strong>. When more water is pumped out than nature can
+            replace, the clay layers underground compress and the land surface sinks. Studies of the area
+            have reported sinking of <strong>several centimeters per year</strong> in some coastal places,
+            much faster than the global rise in sea level <a class="cite" href="references.html#ref-rodolfo2006">(Rodolfo &amp; Siringan, 2006;</a> <a class="cite" href="references.html#ref-ipcc2021">IPCC, 2021)</a>.
+          </p>
+          <p>
+            The result is something many residents already feel: high tides now reach streets and homes,
+            floodwater takes longer to drain, and families must keep raising their floors and roads.
+          </p>
+        </div>
+        <figure class="diagram">
+          <svg viewBox="0 0 400 260" role="img" aria-labelledby="hero-fig-title">
+            <title id="hero-fig-title">Diagram: a house sinking as the land subsides while sea level rises</title>
+            <rect x="0" y="0" width="400" height="260" fill="#dcecf5"/>
+            <!-- original ground line -->
+            <line x1="0" y1="140" x2="400" y2="140" stroke="#8a6a43" stroke-dasharray="6 5" stroke-width="2"/>
+            <text x="392" y="134" font-size="12" fill="#5b4428" text-anchor="end">Original ground level</text>
+            <!-- sea -->
+            <rect x="0" y="168" width="400" height="92" fill="#3f88b5" opacity="0.75"/>
+            <!-- sunken land -->
+            <path d="M0 175 L240 175 L280 200 L280 260 L0 260 Z" fill="#8a6a43"/>
+            <!-- house -->
+            <rect x="80" y="135" width="70" height="40" fill="#f7f5ef" stroke="#1f2a2e"/>
+            <path d="M74 137 L115 108 L156 137 Z" fill="#c8792c"/>
+            <rect x="106" y="150" width="16" height="25" fill="#0f5c63"/>
+            <!-- arrows -->
+            <path d="M190 120 V165" stroke="#b23a32" stroke-width="3" marker-end="url(#arr)"/>
+            <path d="M340 200 V172" stroke="#0a4247" stroke-width="3" marker-end="url(#arr2)"/>
+            <text x="198" y="118" font-size="12" fill="#b23a32" font-weight="700">Land sinks</text>
+            <text x="300" y="220" font-size="12" fill="#fff" font-weight="700">Sea rises</text>
+            <defs>
+              <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#b23a32"/></marker>
+              <marker id="arr2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#0a4247"/></marker>
+            </defs>
+          </svg>
+          <figcaption>When land sinks and the sea rises at the same time, the sea effectively gets "closer" to homes from both directions.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="stat-row" aria-label="Key facts">
+      <div class="stat"><strong>~133,000</strong><span>residents of Hagonoy in the 2020 Census <a class="cite" href="references.html#ref-psa2021">(Philippine Statistics Authority [PSA], 2021)</a></span></div>
+      <div class="stat"><strong>26</strong><span>barangays, many of them coastal or riverside <a class="cite" href="references.html#ref-psa2021">(PSA, 2021)</a></span></div>
+      <div class="stat"><strong>cm per year</strong><span>reported sinking in parts of coastal northern Manila Bay <a class="cite" href="references.html#ref-rodolfo2006">(Rodolfo &amp; Siringan, 2006)</a></span></div>
+      <div class="stat"><strong>mm per year</strong><span>global sea-level rise (about 3.7 mm a year), far slower than local subsidence <a class="cite" href="references.html#ref-ipcc2021">(IPCC, 2021)</a></span></div>
+    </section>
+
+    <section>
+      <h2>Explore the platform</h2>
+      <div class="grid grid-3">
+        <a class="card" href="about.html">
+          <div class="icon" aria-hidden="true">?</div>
+          <h3>About Land Subsidence</h3>
+          <p>What subsidence is, how it happens, and a calculator showing how quickly it adds up.</p>
+        </a>
+        <a class="card" href="causes.html">
+          <div class="icon" aria-hidden="true">&#8681;</div>
+          <h3>Causes &amp; Effects</h3>
+          <p>Groundwater extraction, worsening floods, and damage to roads, homes, and bridges.</p>
+        </a>
+        <a class="card" href="impact.html">
+          <div class="icon" aria-hidden="true">&#9750;</div>
+          <h3>Community Impact</h3>
+          <p>How sinking land affects households, schools, livelihoods, and health in Hagonoy.</p>
+        </a>
+        <a class="card" href="map.html">
+          <div class="icon" aria-hidden="true">&#9673;</div>
+          <h3>Vulnerability Map</h3>
+          <p>An interactive map of the parts of Hagonoy most exposed to subsidence and flooding.</p>
+        </a>
+        <a class="card" href="solutions.html">
+          <div class="icon" aria-hidden="true">&#10003;</div>
+          <h3>Mitigation &amp; Solutions</h3>
+          <p>Community actions, government initiatives, and sustainable water practices.</p>
+        </a>
+        <a class="card" href="learn.html">
+          <div class="icon" aria-hidden="true">&#9998;</div>
+          <h3>Quiz &amp; FAQ</h3>
+          <p>Test what you've learned and find answers to common questions.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h3 style="margin-top:0">Have you noticed sinking, cracks, or worsening floods?</h3>
+      <p>Your observations help build awareness. Share what you've seen in your barangay through our community reporting form.</p>
+      <a class="btn" href="report.html">Go to the reporting form</a>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

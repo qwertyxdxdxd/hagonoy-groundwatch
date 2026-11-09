@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz and FAQ | Hagonoy GroundWatch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function () { var t = new URLSearchParams(location.search).get("theme"); if (!t) { try { t = localStorage.getItem("groundwatch-theme"); } catch (e) {} } if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; })();</script>
+</head>
+<body>
+  <section class="page-banner">
+    <div class="container">
+      <h1>Quiz &amp; FAQ</h1>
+      <p>Test your knowledge about land subsidence, and find answers to common questions.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section>
+      <h2>GroundWatch Quiz</h2>
+      <p class="section-intro">Ten questions in a new random order every time. Choose an answer to see the explanation. Score 70% or higher to print a certificate.</p>
+      <div class="quiz" id="quiz">
+        <div class="quiz-progress"><div id="quiz-bar"></div></div>
+        <p class="note" id="quiz-count"></p>
+        <div id="quiz-body"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <details>
+          <summary>Is land subsidence the same as sea-level rise?</summary>
+          <p>No. Sea-level rise means the ocean is getting higher, mainly because of climate change. Land subsidence means the ground is getting lower. Both make flooding worse, and in Hagonoy subsidence is happening much faster than sea-level rise. Together they are called <em>relative sea-level rise</em>. <a class="cite" href="references.html#ref-rodolfo2006">(Rodolfo &amp; Siringan, 2006)</a></p>
+        </details>
+        <details>
+          <summary>Can sunken land go back up?</summary>
+          <p>Mostly no. When clay layers compact because water was removed, the change is largely permanent. Raising groundwater levels again can stop further sinking, but it won't restore the lost elevation. That is why prevention matters so much. <a class="cite" href="references.html#ref-galloway1999">(Galloway et al., 1999)</a></p>
+        </details>
+        <details>
+          <summary>How do scientists measure subsidence?</summary>
+          <p>They use satellite radar (InSAR), which compares satellite images over time to detect millimeter-level ground movement. They also use GPS stations, leveling surveys with benchmarks, and tide gauges. Residents notice it too, for example when well pipes seem to "rise" out of the ground or roads keep being raised. <a class="cite" href="references.html#ref-raucoules2013">(Raucoules et al., 2013)</a></p>
+        </details>
+        <details>
+          <summary>Is my small household well really a problem?</summary>
+          <p>One well alone has little effect, but thousands of wells together, along with large commercial and aquaculture wells, add up to huge extraction from the same aquifer. Every household that saves water or switches to piped surface water helps reduce the total.</p>
+        </details>
+        <details>
+          <summary>Why does it flood even when it isn't raining?</summary>
+          <p>As the ground sinks, more areas end up below the level of high tide. During spring tides, seawater flows into streets and homes through rivers, canals, and drains, even on sunny days.</p>
+        </details>
+        <details>
+          <summary>Is it safe to drink water from deep wells in Hagonoy?</summary>
+          <p>Not always. Over-pumping near the coast can cause saltwater intrusion, and floods can contaminate shallow wells. Have your water tested, and use safe, treated water for drinking whenever possible.</p>
+        </details>
+        <details>
+          <summary>What is the government doing about it?</summary>
+          <p>Agencies such as the NWRB regulate well permits, the DENR-MGB studies geohazards, and bulk water supply projects aim to replace groundwater with treated surface water. The local government handles flood control and disaster preparedness. See the <a href="solutions.html">Solutions</a> page for details.</p>
+        </details>
+        <details>
+          <summary>What can students do?</summary>
+          <p>Learn about the issue, save water at home, join clean-up and mangrove planting activities, share accurate information on social media, and report observations through our <a href="report.html">reporting form</a>.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

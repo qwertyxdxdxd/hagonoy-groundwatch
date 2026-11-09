@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Report | Hagonoy GroundWatch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function () { var t = new URLSearchParams(location.search).get("theme"); if (!t) { try { t = localStorage.getItem("groundwatch-theme"); } catch (e) {} } if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; })();</script>
+</head>
+<body>
+  <section class="page-banner">
+    <div class="container">
+      <h1>Community Feedback &amp; Reporting</h1>
+      <p>Seen signs of land subsidence or worsening floods? Share your observations and concerns.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section>
+      <h2>What can you report?</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>Signs of sinking</h3><p>Well pipes that seem to rise out of the ground, sinking floors, tilted posts or walls, and doors that no longer close.</p></div>
+        <div class="card"><h3>Flooding changes</h3><p>Tides reaching new areas, floods lasting longer, and flooding on days without rain.</p></div>
+        <div class="card"><h3>Infrastructure damage</h3><p>Cracks in roads, walls, or bridges, broken drainage, and houses now below road level.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Submit a report</h2>
+      <form class="form" id="report-form" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name <span class="note">(optional)</span></label>
+            <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" maxlength="80">
+          </div>
+          <div class="field" data-required>
+            <label for="barangay">Barangay *</label>
+            <select id="barangay" name="barangay" required>
+              <option value="">Select your barangay</option>
+            </select>
+            <span class="error">Please select a barangay.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field" data-required>
+            <label for="type">Type of report *</label>
+            <select id="type" name="type" required>
+              <option value="">Select a category</option>
+              <option>Signs of ground sinking</option>
+              <option>Tidal / non-rain flooding</option>
+              <option>Prolonged flooding after rain</option>
+              <option>Cracks or damage to structures</option>
+              <option>Salty or contaminated well water</option>
+              <option>Blocked canal or drainage</option>
+              <option>General concern or suggestion</option>
+            </select>
+            <span class="error">Please choose a category.</span>
+          </div>
+          <div class="field" data-required>
+            <label for="date">Date observed *</label>
+            <input type="date" id="date" name="date" required>
+            <span class="error">Please enter a valid date (not in the future).</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="location">Specific location / landmark</label>
+          <input type="text" id="location" name="location" placeholder="e.g. near the barangay hall, along the river road" maxlength="120">
+        </div>
+
+        <div class="field">
+          <label for="severity">How serious is it?</label>
+          <select id="severity" name="severity">
+            <option>Low: Minor and not urgent</option>
+            <option selected>Medium: Noticeable and getting worse</option>
+            <option>High: Affects safety or many households</option>
+          </select>
+        </div>
+
+        <div class="field" data-required>
+          <label for="details">Describe what you observed *</label>
+          <textarea id="details" name="details" rows="5" required minlength="15" maxlength="1000"
+            placeholder="What did you see? When did it start? How has it changed over time?"></textarea>
+          <span class="error">Please describe your observation (at least 15 characters).</span>
+        </div>
+
+        <div class="field check">
+          <label><input type="checkbox" id="consent" name="consent"> I agree that this report may be used for community awareness (no personal information will be shared).</label>
+        </div>
+
+        <button type="submit" class="btn">Submit report</button>
+        <div class="form-success" id="form-success" role="status"></div>
+      </form>
+      <p class="note">
+        <strong>Prototype notice:</strong> This form is a working mock-up. Reports are saved only in this browser
+        so you can see how the system would work. For urgent concerns, contact your barangay or the Hagonoy MDRRMO directly.
+      </p>
+    </section>
+
+    <section>
+      <h2>Recent reports on this device</h2>
+      <ul class="report-list" id="report-list"></ul>
+      <button type="button" class="btn outline" id="clear-reports" hidden>Clear saved reports</button>
+    </section>
+
+    <!--
+      OPTIONAL: Google Form integration
+      1. Create a Google Form with the same questions as above.
+      2. In Google Forms, click Send > the "< >" (embed) tab and copy the iframe src link.
+      3. Paste it below in place of YOUR_FORM_ID and uncomment this section.
+
+    <section>
+      <h2>Submit through Google Forms</h2>
+      <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+              width="100%" height="900" frameborder="0" title="GroundWatch Google Form">Loading…</iframe>
+    </section>
+    -->
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/report.js"></script>
+</body>
+</html>

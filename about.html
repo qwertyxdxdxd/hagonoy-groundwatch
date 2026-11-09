@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Land Subsidence | Hagonoy GroundWatch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function () { var t = new URLSearchParams(location.search).get("theme"); if (!t) { try { t = localStorage.getItem("groundwatch-theme"); } catch (e) {} } if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; })();</script>
+</head>
+<body>
+  <section class="page-banner">
+    <div class="container">
+      <h1>About Land Subsidence</h1>
+      <p>What it is, how it happens, and why Hagonoy is especially vulnerable.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section>
+      <h2>What is land subsidence?</h2>
+      <p class="section-intro">
+        <strong>Land subsidence</strong> is the gradual settling or sudden sinking of the Earth's surface
+        caused by the movement of materials underground. It can happen naturally, but in many coastal
+        and delta cities around the world it is driven mainly by <strong>human activity</strong>,
+        especially the over-pumping of groundwater <a class="cite" href="references.html#ref-herrera2021">(Herrera-García et al., 2021)</a>.
+      </p>
+      <p class="section-intro">
+        Unlike an earthquake, subsidence is usually slow and silent. A few centimeters a year is hard to notice
+        day to day, but over 10 to 20 years it can lower the ground by a meter or more. In a low-lying
+        coastal town, that is the difference between dry streets and permanent tidal flooding.
+      </p>
+    </section>
+
+    <section>
+      <h2>How does it happen?</h2>
+      <div class="two-col">
+        <figure class="diagram">
+          <svg viewBox="0 0 420 300" role="img" aria-labelledby="aq-title">
+            <title id="aq-title">Cross-section showing a well pumping water from an aquifer and clay layers compacting</title>
+            <rect x="0" y="0" width="420" height="40" fill="#dcecf5"/>
+            <rect x="0" y="40" width="420" height="40" fill="#b08a5a"/>
+            <text x="10" y="64" font-size="12" fill="#fff">Topsoil / delta sediments</text>
+            <rect x="0" y="80" width="420" height="50" fill="#7d6a8f"/>
+            <text x="10" y="110" font-size="12" fill="#fff">Clay layer (holds water in tiny pores)</text>
+            <rect x="0" y="130" width="420" height="60" fill="#d9c27a"/>
+            <text x="10" y="165" font-size="12" fill="#3b2f0c">Sand aquifer (groundwater)</text>
+            <rect x="0" y="190" width="420" height="40" fill="#7d6a8f"/>
+            <text x="10" y="214" font-size="12" fill="#fff">Clay layer</text>
+            <rect x="0" y="230" width="420" height="70" fill="#d9c27a"/>
+            <text x="10" y="268" font-size="12" fill="#3b2f0c">Deep aquifer</text>
+            <!-- well -->
+            <rect x="300" y="10" width="14" height="250" fill="#5d6b70"/>
+            <rect x="290" y="0" width="34" height="14" fill="#1f2a2e"/>
+            <path d="M330 7 h40" stroke="#3f88b5" stroke-width="4"/>
+            <text x="334" y="30" font-size="11" fill="#0a4247">Pumped water</text>
+            <!-- arrows down -->
+            <path d="M230 46 V72" stroke="#b23a32" stroke-width="3" marker-end="url(#a1)"/>
+            <path d="M330 86 V122" stroke="#b23a32" stroke-width="3" marker-end="url(#a1)"/>
+            <path d="M230 196 V222" stroke="#b23a32" stroke-width="3" marker-end="url(#a1)"/>
+            <defs><marker id="a1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#b23a32"/></marker></defs>
+          </svg>
+          <figcaption>Pumping lowers water pressure in the aquifer. Water seeps out of the clay layers, the clay compacts, and the ground above sinks.</figcaption>
+        </figure>
+        <ol>
+          <li><strong>Groundwater is pumped</strong> from sand and gravel layers (aquifers) through deep wells.</li>
+          <li><strong>Water pressure drops.</strong> Underground water helps hold up the weight of the soil above it. When it is removed, that support is lost.</li>
+          <li><strong>Clay layers squeeze.</strong> Water slowly drains out of the clay between aquifers, and the clay particles pack together more tightly.</li>
+          <li><strong>The surface sinks.</strong> The compaction adds up across all the layers and shows up as a lower ground surface.</li>
+          <li><strong>It is mostly permanent.</strong> Once clay has compacted, it does not bounce back even if the water returns. Stopping over-pumping can slow or stop further sinking, but lost elevation is rarely recovered <a class="cite" href="references.html#ref-galloway1999">(Galloway et al., 1999)</a>.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <h2>Natural vs. human-induced subsidence</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Natural causes</h3>
+          <ul>
+            <li>Natural settling and compaction of young river and delta sediments</li>
+            <li>Tectonic movement and earthquakes</li>
+            <li>Dissolving of underground rock (sinkholes), which is rare in Hagonoy</li>
+          </ul>
+          <p class="note">Natural compaction in deltas is usually slow, on the order of millimeters per year.</p>
+        </div>
+        <div class="card">
+          <h3>Human-induced causes</h3>
+          <ul>
+            <li><strong>Excessive groundwater extraction</strong>, the dominant cause around northern Manila Bay <a class="cite" href="references.html#ref-rodolfo2006">(Rodolfo &amp; Siringan, 2006)</a></li>
+            <li>Heavy loads from buildings, landfill, and road raising on soft soil</li>
+            <li>Draining wetlands and converting land use</li>
+          </ul>
+          <p class="note">Groundwater pumping is the leading cause of subsidence in many parts of the world and can lower the ground far faster than natural compaction <a class="cite" href="references.html#ref-galloway1999">(Galloway et al., 1999)</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why is Hagonoy especially vulnerable?</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>Low elevation</h3><p>Much of the town lies only about a meter or two above mean sea level, so even small amounts of sinking matter.</p></div>
+        <div class="card"><h3>Soft delta soils</h3><p>Hagonoy sits on the Pampanga River delta. Its thick, young clay deposits compress easily when groundwater is removed.</p></div>
+        <div class="card"><h3>Heavy groundwater use</h3><p>Households, businesses, and aquaculture in the region have long depended on deep wells for their water supply.</p></div>
+        <div class="card"><h3>Facing Manila Bay</h3><p>Coastal barangays are exposed to high tides, storm surges, and sea-level rise.</p></div>
+        <div class="card"><h3>Many waterways</h3><p>Rivers and creeks carry upstream floodwater from the Pampanga River basin through town on its way to the bay.</p></div>
+        <div class="card"><h3>Frequent typhoons</h3><p>Monsoon rains and typhoons combine with high tides to cause severe and long-lasting floods.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Interactive: How fast does it add up?</h2>
+      <p class="section-intro">
+        Move the sliders to see how much the ground sinks over time at different rates, compared with
+        global sea-level rise (about 3.7 mm or 0.37 cm per year from 2006 to 2018) <a class="cite" href="references.html#ref-ipcc2021">(IPCC, 2021)</a>. The figures are for illustration only.
+      </p>
+      <div class="calc" id="subsidence-calc">
+        <label for="rate">Subsidence rate: <span id="rate-out">4.0</span> cm per year</label>
+        <input type="range" id="rate" min="0.5" max="10" step="0.5" value="4">
+        <label for="years">Number of years: <span id="years-out">20</span></label>
+        <input type="range" id="years" min="1" max="50" step="1" value="20">
+
+        <div class="calc-output">
+          <div class="stat"><strong id="sink-out">0 cm</strong><span>Land sinking</span></div>
+          <div class="stat"><strong id="sea-out">0 cm</strong><span>Sea-level rise</span></div>
+          <div class="stat"><strong id="total-out">0 cm</strong><span>Relative sea-level rise, the combined effect on flooding</span></div>
+        </div>
+
+        <div class="calc-visual" aria-hidden="true">
+          <div class="sea"></div>
+          <div class="land"></div>
+          <svg class="house" viewBox="0 0 36 30"><path d="M2 14 L18 2 L34 14 Z" fill="#c8792c"/><rect x="6" y="13" width="24" height="17" fill="#f7f5ef" stroke="#1f2a2e"/></svg>
+          <span class="label">Blue = sea, brown = land</span>
+        </div>
+      </div>
+      <p class="note">Relative sea-level rise is what residents actually experience: how much higher the sea is compared with the ground they stand on.</p>
+    </section>
+
+    <div class="btn-row">
+      <a class="btn" href="causes.html">Next: Causes &amp; Effects &rarr;</a>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
