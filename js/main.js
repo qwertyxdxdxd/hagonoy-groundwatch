@@ -61,6 +61,8 @@ function setupCompactHeader(header) {
   const toggle = header.querySelector(".nav-toggle");
 
   function update() {
+    // Trying layouts changes the header height for a moment; keep the reader's place
+    const scrollY = window.scrollY;
     header.classList.remove("stacked", "compact");
     if (row.scrollWidth > row.clientWidth + 1) {
       // Links on their own row may wrap onto a second line, but no more,
@@ -77,6 +79,7 @@ function setupCompactHeader(header) {
     }
     // Keep in-page links (e.g. citations) from landing under the sticky header
     document.documentElement.style.scrollPaddingTop = header.offsetHeight + 16 + "px";
+    if (window.scrollY !== scrollY) window.scrollTo({ top: scrollY, behavior: "instant" });
   }
 
   // Mobile browsers fire "resize" while scrolling (the address bar shows and hides).
@@ -214,6 +217,18 @@ function setupCalculator() {
 
   rate.addEventListener("input", update);
   years.addEventListener("input", update);
+
+  // On phones a slider stays focused after it is touched, and when the address bar
+  // reappears during scrolling, Chrome scrolls the focused control back into view,
+  // making the page jump up to the calculator. Release focus when the finger lifts;
+  // keyboard and mouse users keep normal focus.
+  [rate, years].forEach((slider) => {
+    slider.addEventListener("touchend", () => slider.blur());
+    slider.addEventListener("pointerup", (e) => {
+      if (e.pointerType !== "mouse") slider.blur();
+    });
+  });
+
   update();
 }
 
