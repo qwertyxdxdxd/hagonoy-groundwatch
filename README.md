@@ -2,11 +2,6 @@
 
 A Web-Based Environmental Awareness Platform on Land Subsidence in Hagonoy, Bulacan.
 
-## How to open
-
-Double-click `index.html`. It opens in any browser, and no installation is needed.
-The Google Map on `map.html` needs an internet connection; everything else works offline.
-
 ## Pages
 
 | File | Required section |
