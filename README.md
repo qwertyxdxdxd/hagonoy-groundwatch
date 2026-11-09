@@ -20,8 +20,3 @@ The Google Map on `map.html` needs an internet connection; everything else works
 | `learn.html` | Interactive Feature: 10-question quiz and FAQ |
 | `report.html` | Community Feedback/Reporting Form (working mock-up) |
 | `references.html` | References (APA 7th edition) |
-
-Other features: dark mode (toggle in the header; follows the device setting by default), a shuffled quiz with a printable certificate for scores of 70% or higher, a filterable flood-history timeline, and a before/during/after flood guide.
-
-Shared files: `css/style.css` and `js/main.js` (header, footer, calculator), plus `js/map.js`, `js/quiz.js`, `js/report.js`.
-
